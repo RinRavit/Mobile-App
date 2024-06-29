@@ -1,8 +1,11 @@
 # project_mobile_app
 
-A new Flutter project.
+Mobile App
 
 ## Getting Started
+first need to inter flutter SDK end set up it 
+
+
 
 This project is a starting point for a Flutter application.
 
