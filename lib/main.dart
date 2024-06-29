@@ -30,6 +30,9 @@ import 'menu_page.dart';
 import 'search_page.dart';
 import 'profile_page.dart';
 import 'order_page.dart';
+import 'wishlist_page.dart';
+import 'men_page.dart';
+import 'women_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -51,6 +54,9 @@ class MyApp extends StatelessWidget {
         '/search': (context) => SearchPage(),
         '/profile': (context) => ProfilePage(),
         '/order': (context) => OrderPage(),
+        '/wishlist': (context) => WishlistPage(),
+        '/men': (context) => MenPage(),
+        '/women': (context) => WomenPage(),
       },
     );
   }

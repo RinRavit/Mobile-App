@@ -7,11 +7,11 @@ class CodeVerificationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: const Color.fromARGB(255, 34, 40, 49),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(16.0),
-          margin: EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.all(16.0),
+          margin: const EdgeInsets.symmetric(horizontal: 24.0),
           decoration: BoxDecoration(
             color: Colors.grey[800],
             borderRadius: BorderRadius.circular(16.0),
@@ -19,7 +19,7 @@ class CodeVerificationPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
+              const Text(
                 'WHAT CODE SEND?',
                 style: TextStyle(
                   color: Colors.white,
@@ -28,22 +28,22 @@ class CodeVerificationPage extends StatelessWidget {
                   letterSpacing: 2.0,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Text(
+              const SizedBox(height: 16.0),
+              const Text(
                 'Code Send to 0## ### ##6',
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 16,
                 ),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(4, (index) {
                   return Container(
                     width: 50,
                     height: 50,
-                    margin: EdgeInsets.symmetric(horizontal: 5),
+                    margin: const EdgeInsets.symmetric(horizontal: 5),
                     decoration: BoxDecoration(
                       color: Colors.grey[700],
                       borderRadius: BorderRadius.circular(8.0),
@@ -52,29 +52,29 @@ class CodeVerificationPage extends StatelessWidget {
                       controller: _codeController,
                       textAlign: TextAlign.center,
                       maxLength: 1,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         border: InputBorder.none,
                         counterText: '',
                         hintText: '#',
                         hintStyle: TextStyle(color: Colors.white70),
                       ),
-                      style: TextStyle(color: Colors.white, fontSize: 24),
+                      style: const TextStyle(color: Colors.white, fontSize: 24),
                       keyboardType: TextInputType.number,
                     ),
                   );
                 }),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextButton(
                 onPressed: () {
                   // Implement send again logic here
                 },
-                child: Text(
+                child: const Text(
                   'Send again!',
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -82,7 +82,7 @@ class CodeVerificationPage extends StatelessWidget {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'Back',
                       style: TextStyle(color: Colors.white),
                     ),
@@ -95,7 +95,7 @@ class CodeVerificationPage extends StatelessWidget {
                             builder: (context) => NewPasswordPage()),
                       );
                     },
-                    child: Text(
+                    child: const Text(
                       'Next',
                       style: TextStyle(color: Colors.white),
                     ),

@@ -10,11 +10,11 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Color.fromARGB(255, 34, 40, 49),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(16.0),
-          margin: EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.all(16.0),
+          margin: const EdgeInsets.symmetric(horizontal: 24.0),
           decoration: BoxDecoration(
             color: Colors.grey[800],
             borderRadius: BorderRadius.circular(16.0),
@@ -22,7 +22,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
+              const Text(
                 'LOG IN ACCOUNT!',
                 style: TextStyle(
                   color: Colors.white,
@@ -31,13 +31,13 @@ class LoginPage extends StatelessWidget {
                   letterSpacing: 2.0,
                 ),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextField(
                 controller: _phoneNumberController,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.phone, color: Colors.white),
+                  prefixIcon: const Icon(Icons.phone, color: Colors.white),
                   hintText: 'Phone Number',
-                  hintStyle: TextStyle(color: Colors.white70),
+                  hintStyle: const TextStyle(color: Colors.white70),
                   filled: true,
                   fillColor: Colors.grey[700],
                   border: OutlineInputBorder(
@@ -45,15 +45,15 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 keyboardType: TextInputType.phone,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextField(
                 controller: _passwordController,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.lock, color: Colors.white),
+                  prefixIcon: const Icon(Icons.lock, color: Colors.white),
                   hintText: 'Password',
-                  hintStyle: TextStyle(color: Colors.white70),
+                  hintStyle: const TextStyle(color: Colors.white70),
                   filled: true,
                   fillColor: Colors.grey[700],
                   border: OutlineInputBorder(
@@ -61,14 +61,15 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 obscureText: true,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               Row(
                 children: [
                   Checkbox(value: false, onChanged: (value) {}),
-                  Text('Remember me', style: TextStyle(color: Colors.white)),
-                  Spacer(),
+                  const Text('Remember me',
+                      style: TextStyle(color: Colors.white)),
+                  const Spacer(),
                   TextButton(
                     onPressed: () {
                       Navigator.push(
@@ -77,25 +78,25 @@ class LoginPage extends StatelessWidget {
                             builder: (context) => ForgotPasswordPage()),
                       );
                     },
-                    child: Text(
+                    child: const Text(
                       'Forgot your password?',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               ElevatedButton(
                 onPressed: () {
                   // Implement login logic here
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => const HomePage()),
                   );
                 },
-                child: Text('Log in'),
+                child: const Text('Log in'),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -103,7 +104,7 @@ class LoginPage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => SignupPage()),
                   );
                 },
-                child: Text(
+                child: const Text(
                   'No account? Create account',
                   style: TextStyle(color: Colors.blue),
                 ),

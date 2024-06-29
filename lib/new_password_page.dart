@@ -9,7 +9,7 @@ class NewPasswordPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Color.fromARGB(255, 34, 40, 49),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(16.0),

@@ -74,6 +74,22 @@ flutter:
     - assets/Girl5.png
     - assets/Girl6.png
     - assets/Girl7.png
+    - assets/background1.png
+    - assets/background2.png
+    - assets/background3.png
+    - assets/icon/shirt.png
+    - assets/icon/shoes.png
+    - assets/icon/shorts.png
+    - assets/icon/coupon.png
+    - assets/icon/dress.png
+    - assets/icon/grid.png
+    - assets/icon/jacket.png
+    - assets/icon/pants1.png
+    - assets/icon/pants2.png
+    - assets/icon/straw-hat.png
+    - assets/icon/new.png
+    - assets/icon/shopping-bag.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
